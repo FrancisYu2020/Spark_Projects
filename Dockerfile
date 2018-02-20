@@ -55,7 +55,8 @@ ENV PATH="/usr/local/spark/bin:${PATH}"
 RUN chmod a+rwx -R /usr/local/spark/
 
 # Download and setup Apache Storm
-RUN curl -s "http://apache.mirrors.lucidnetworks.net/storm/apache-storm-1.0.5/apache-storm-1.0.5.tar.gz" | tar -xz -C /usr/local/
+# RUN curl -s "http://apache.mirrors.lucidnetworks.net/storm/apache-storm-1.0.5/apache-storm-1.0.5.tar.gz" | tar -xz -C /usr/local/
+RUN curl -s "https://archive.apache.org/dist/storm/apache-storm-1.0.5/apache-storm-1.0.5.tar.gz" | tar -xz -C /usr/local/
 RUN ln -s /usr/local/apache-storm-1.0.5 /usr/local/storm
 
 ENV STORM_HOME /usr/local/storm
