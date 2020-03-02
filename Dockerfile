@@ -58,3 +58,5 @@ RUN chmod a+rwx -R /usr/local/spark/
 
 # Make vim nice
 RUN echo "set background=dark" >> ~/.vimrc
+
+ENV PYSPARK_PYTHON=python3
