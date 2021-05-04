@@ -1,4 +1,4 @@
-# Docker for MP4 Hadoop MapReduce
+# Docker for MP5 Spark MapReduce
 
 ## Log 
-Last udpated in Mar 2021, by Yigong Hu (yigongh2@illinois.edu)
+Last udpated in May 2021, by Sam Cheng (rcheng12@illinois.edu)
