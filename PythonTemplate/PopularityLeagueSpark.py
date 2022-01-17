@@ -6,7 +6,7 @@ from pyspark import SparkConf, SparkContext
 
 conf = SparkConf().setMaster("local").setAppName("PopularityLeague")
 conf.set("spark.driver.bindAddress", "127.0.0.1")
-sc = SparkContext(conf = conf)
+sc = SparkContext(conf=conf)
 
 lines = sc.textFile(sys.argv[1], 1) 
 

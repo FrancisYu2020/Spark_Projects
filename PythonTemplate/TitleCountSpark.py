@@ -16,9 +16,9 @@ with open(delimitersPath) as f:
 
 conf = SparkConf().setMaster("local").setAppName("TitleCount")
 conf.set("spark.driver.bindAddress", "127.0.0.1")
-sc = SparkContext(conf = conf)
+sc = SparkContext(conf=conf)
 
-lines = sc.textFile(sys.argv[3],1)
+lines = sc.textFile(sys.argv[3], 1)
 
 #TODO
 

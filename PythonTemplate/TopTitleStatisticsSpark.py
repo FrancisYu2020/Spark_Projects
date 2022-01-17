@@ -4,13 +4,13 @@ from pyspark import SparkConf, SparkContext
 
 conf = SparkConf().setMaster("local").setAppName("TopTitleStatistics")
 conf.set("spark.driver.bindAddress", "127.0.0.1")
-sc = SparkContext(conf = conf)
+sc = SparkContext(conf=conf)
 
-lines = sc.textFile(sys.argv[1],1)
+lines = sc.textFile(sys.argv[1], 1)
 
 #TODO
 
-outputFile = open(sys.argv[2],"w")
+outputFile = open(sys.argv[2], "w")
 '''
 TODO write your output here
 write results to output file. Format
