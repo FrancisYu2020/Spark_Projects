@@ -14,8 +14,7 @@ def produce_pairs(line):
     tgts = tgts[:-1].split(' ') if tgts[-1] == '\n' else tgts.split(' ')
     ret = []
     for tgt in tgts:
-        if tgt != src:
-            ret.append((tgt, (1, 0)))
+        ret.append((tgt, (1, 0)))
     ret.append((src, (0, 1)))
     return ret
 
