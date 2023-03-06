@@ -1,3 +1,5 @@
+.vim*
 .ssh
 .bash*
-.*
+.DS*
+.python*
